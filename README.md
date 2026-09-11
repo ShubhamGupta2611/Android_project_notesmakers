@@ -125,11 +125,14 @@ cd Android_project_notesmakers
    npm install
    ```
 
-3. Configure Environment Variables (Optional):
-   By default, the server connects to `mongodb://127.0.0.1:27017/android-notes` on port `5000`. You can configure custom variables via environment variables or a `.env` file:
-   ```env
-   MONGODB_URI=mongodb+srv://shubhamgupta2025_db_user:androidNotes_2026@cluster0.t5s8mxd.mongodb.net/android-notes?retryWrites=true&w=majority
-   ```
+3. ### Configure Environment Variables
+
+By default, the server connects to `mongodb://127.0.0.1:27017/android-notes` on port `5000`.
+
+For MongoDB Atlas, create a `.env` file inside the `backend` folder and add:
+
+```env
+MONGODB_URI=mongodb+srv://<username>:<password>@<cluster-url>/android-notes?retryWrites=true&w=majority
 
 4. Start the backend server:
    ```bash
